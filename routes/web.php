@@ -30,6 +30,6 @@ Route::prefix('/upload')->group(function(){
     Route::get('/', [UploadController::class, 'index'])->name('upload');
     Route::post('/', [UploadController::class, 'upload'])->name('upload');
     Route::post('/store', [UploadController::class, 'store'])->name('upload.store');
-});
+})->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';
