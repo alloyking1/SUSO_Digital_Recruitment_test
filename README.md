@@ -40,13 +40,15 @@ This is a web application build with Laravel and VueJS designed to analyze perfo
    run the following to install dependencies
 
     ```bash
+     composer install
+    ```
+
+    ```bash
     npm install
     ```
 
-    and
-
     ```bash
-    composer install
+    cp .env.example .env
     ```
 
 4. **Serve project**
